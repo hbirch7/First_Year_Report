@@ -1,0 +1,123 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+%\usepackage{tikz-feynman}
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{ragged2e} 
+\usepackage{siunitx}
+\usepackage{float}% if this breaks everything get rid 
+\usepackage[style = nature]{biblatex}
+\usepackage{amsmath}
+\usepackage{amssymb}   % for maths symbols
+\usepackage{mathrsfs}   % for maths symbols
+\usepackage{todonotes}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\captionsetup{font=small,labelfont=bf}
+\addbibresource{references.bib}
+\usepackage[nottoc]{tocbibind} 
+\usepackage{hyperref}
+
+
+% \usepackage{geometry}
+% \geometry{a4paper, total={150mm,240mm},left=30mm, top=20mm}
+
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
+
+\graphicspath{{Dissertation/}}
+\pagenumbering{arabic}
+
+
+
+
+\begin{document}
+%\pagenumbering{roman}
+\begin{titlepage}
+    \begin{center}
+        \huge
+        \textbf{Development of the Optical Calibration System for the Outer Detector of the LUX-ZEPLIN Dark Matter Experiment}
+
+        
+        \vspace{0.1cm}
+        
+    
+        \LARGE
+        \textbf{By\\
+        \vspace{0.1cm}
+        Harvey Birch\\
+        \vspace{0.1cm}
+         201011648}
+        
+        
+        \vspace{1.5cm}
+        
+        \large
+        \textbf{Supervisors: Dr Sergey Burdin and Dr Will Turner}
+        
+        
+        \normalsize
+        A report submitted in partial fulfillment of the requirements for the degree of\\
+        \vspace{0.5cm}
+        \large
+        \textbf{Particle Physics MPhil}
+        
+        \vspace{0.3cm}
+        
+    
+        \large
+        Department of Physics\\
+        \vspace{0.3cm}
+        University of Liverpool\\
+       
+        
+       
+        June 2019
+        
+        \vspace{1cm}
+        \begin{figure}[h]
+            \centering
+            \includegraphics[width=0.7\textwidth]{Figures/UoL.png}
+        \end{figure}
+        \begin{figure}[h]
+            \centering
+            \includegraphics[width=0.25\textwidth]{Figures/LZ_logo.png}
+        \end{figure}
+        
+        
+    \end{center}
+\end{titlepage}
+\pagenumbering{roman}
+\tableofcontents
+\listoffigures
+\listoftables
+\pagenumbering{arabic}
+\chapter{Introduction}\label{Chap1:Intro}
+\setcounter{page}{1}
+\input{Chapters/C1Introduction.tex}
+
+\chapter{Cosmological indications for Dark Matter}\label{Chap2:Cosmo}
+\input{Chapters/C2CosmologicalIndications.tex}
+
+\chapter{Possible candidates for Dark Matter}\label{Chap3:Candi}
+\input{Chapters/C3PossibleCandidates.tex}
+
+\chapter{Searches for Dark Matter}\label{Chap4:Search}
+\input{Chapters/C4SearchforDM.tex}
+
+\chapter{LUX-ZEPLIN Experiment}\label{Chap5:LZ}
+\input{Chapters/C5LZ.tex}
+
+\chapter{Optical Calibration System}\label{Chap6:OCS}
+\input{Chapters/C6OCS.tex}
+
+\chapter{OCC firmware update testing}\label{Chap7:FST}
+\input{Chapters/C7FST.tex}
+
+\chapter{Fibre Support Structures}\label{Chap8:FSS}
+\input{Chapters/C8FSS.tex}
+
+\chapter{Discussion and future work}\label{Chap10:Discussion}
+\input{Chapters/C10Discussion.tex}
+
+\printbibliography
+\end{document}
